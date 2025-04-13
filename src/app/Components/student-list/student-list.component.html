@@ -1,0 +1,48 @@
+<div class="container-fluid">
+  <div class="row text-center">
+    <div class="col">
+      <div class="card">
+        <div class="card-header text-center fs-2 bg-primary">Student List</div>
+        <div class="card-body">
+          <table
+            class="table table-striped table-hover table-bordered border-secondary"
+          >
+            <thead>
+              <tr>
+                <th rowspan="2">ID</th>
+                <th rowspan="2">Name</th>
+                <th rowspan="2">Eamil</th>
+                <th rowspan="2">Class</th>
+                <th rowspan="2">Gender</th>
+                <th rowspan="2">Age</th>
+                <th colspan="3">Marks</th>
+                <th rowspan="2">Result</th>
+                <th rowspan="2">Password</th>
+              </tr>
+              <tr>
+                <th>Physics</th>
+                <th>Maths</th>
+                <th>Englis</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let item of studentsData">
+                <td>{{ item.info.id }}</td>
+                <td>{{ item.info.name }}</td>
+                <td>{{ item.info.email }}</td>
+                <td>{{ item.info.class }}</td>
+                <td>{{ item.info.gender }}</td>
+                <td>{{ item.info.age }}</td>
+                <td>{{ item.info.marks.physics }}</td>
+                <td>{{ item.info.marks.maths }}</td>
+                <td>{{ item.info.marks.english }}</td>
+                <td>{{ item.info.result }}</td>
+                <td>{{ item.password }}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
