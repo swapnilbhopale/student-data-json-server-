@@ -12,9 +12,10 @@ import { CommonModule } from "@angular/common";
 import { MatExpansionModule } from "@angular/material/expansion";
 import { StudentListComponent } from './Components/student-list/student-list.component';
 import { StudentFormComponent } from './Components/student-form/student-form.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
-  declarations: [AppComponent, StudentListComponent, StudentFormComponent],
+  declarations: [AppComponent, StudentListComponent, StudentFormComponent, NavbarComponent],
   imports: [
     CommonModule,
     BrowserModule,

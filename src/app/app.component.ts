@@ -8,18 +8,5 @@ import { IStudent } from "./Modal/students-data";
   styleUrls: ["./app.component.scss"],
 })
 export class AppComponent {
-  title = "product-list";
-  mydata: IStudent[] = [];
-  constructor(private studentDataServ_: StudentDataService) {
-    this.getData();
-  }
-
-  getData() {
-    this.studentDataServ_.getStudentData().subscribe((res: IStudent[]) => {
-      this.mydata = res;
-      if (this.mydata) {
-        console.log(this.mydata[0], "---------");
-      }
-    });
-  }
+  title = "Student-Portal";
 }

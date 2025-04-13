@@ -3,7 +3,7 @@ import { RouterModule, Routes } from "@angular/router";
 import { StudentListComponent } from "./Components/student-list/student-list.component";
 import { StudentFormComponent } from "./Components/student-form/student-form.component";
 const routes: Routes = [
-  { path: "", redirectTo: "student-form", pathMatch: "full" },
+  { path: "", redirectTo: "student-list", pathMatch: "full" },
   {
     path: "student-list",
     component: StudentListComponent,
