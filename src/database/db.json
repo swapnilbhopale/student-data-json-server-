@@ -2,12 +2,12 @@
   "data": [
     {
       "id": "1",
-      "username": "arun1@student.com",
-      "password": "pass1",
+      "password": "abcd",
+      "userName": "abcd@student.com",
       "info": {
         "class": "5",
         "name": "Arun",
-        "gender": "Male",
+        "gender": "male",
         "age": 14,
         "email": "arun1@student.com",
         "marks": {
@@ -20,12 +20,12 @@
     },
     {
       "id": "2",
-      "username": "rajesh2@student.com",
-      "password": "pass2",
+      "userName": "rajesh2@student.com",
+      "password": "pass2test",
       "info": {
         "class": "6",
         "name": "Rajesh",
-        "gender": "Male",
+        "gender": "male",
         "age": 15,
         "email": "rajesh2@student.com",
         "marks": {
@@ -43,7 +43,7 @@
       "info": {
         "class": "8",
         "name": "Moorthy",
-        "gender": "Male",
+        "gender": "male",
         "age": 16,
         "email": "moorthy3@student.com",
         "marks": {
@@ -56,12 +56,12 @@
     },
     {
       "id": "4",
-      "username": "raja4@student.com",
-      "password": "pass4",
+      "userName": "raja4@student.com",
+      "password": "pass4test",
       "info": {
         "class": "5",
         "name": "Raja",
-        "gender": "Male",
+        "gender": "male",
         "age": 13,
         "email": "raja4@student.com",
         "marks": {
@@ -79,7 +79,7 @@
       "info": {
         "class": "7",
         "name": "Usha",
-        "gender": "Female",
+        "gender": "female",
         "age": 15,
         "email": "usha5@student.com",
         "marks": {
@@ -97,7 +97,7 @@
       "info": {
         "class": "8",
         "name": "Siva",
-        "gender": "Male",
+        "gender": "male",
         "age": 16,
         "email": "siva6@student.com",
         "marks": {
@@ -115,7 +115,7 @@
       "info": {
         "class": "6",
         "name": "Latha",
-        "gender": "Female",
+        "gender": "female",
         "age": 14,
         "email": "latha7@student.com",
         "marks": {
@@ -133,7 +133,7 @@
       "info": {
         "class": "5",
         "name": "Vijay",
-        "gender": "Male",
+        "gender": "male",
         "age": 13,
         "email": "vijay8@student.com",
         "marks": {
@@ -151,7 +151,7 @@
       "info": {
         "class": "7",
         "name": "Nisha",
-        "gender": "Female",
+        "gender": "female",
         "age": 15,
         "email": "nisha9@student.com",
         "marks": {
@@ -169,7 +169,7 @@
       "info": {
         "class": "6",
         "name": "Krishna",
-        "gender": "Male",
+        "gender": "male",
         "age": 14,
         "email": "krishna10@student.com",
         "marks": {
@@ -187,7 +187,7 @@
       "info": {
         "class": "8",
         "name": "Geetha",
-        "gender": "Female",
+        "gender": "female",
         "age": 16,
         "email": "geetha11@student.com",
         "marks": {
@@ -205,7 +205,7 @@
       "info": {
         "class": "5",
         "name": "Saran",
-        "gender": "Male",
+        "gender": "male",
         "age": 13,
         "email": "saran12@student.com",
         "marks": {
@@ -223,7 +223,7 @@
       "info": {
         "class": "7",
         "name": "Divya",
-        "gender": "Female",
+        "gender": "female",
         "age": 14,
         "email": "divya13@student.com",
         "marks": {
@@ -241,7 +241,7 @@
       "info": {
         "class": "6",
         "name": "Suresh",
-        "gender": "Male",
+        "gender": "male",
         "age": 15,
         "email": "suresh14@student.com",
         "marks": {
@@ -259,7 +259,7 @@
       "info": {
         "class": "8",
         "name": "Prema",
-        "gender": "Female",
+        "gender": "female",
         "age": 16,
         "email": "prema15@student.com",
         "marks": {
@@ -277,7 +277,7 @@
       "info": {
         "class": "5",
         "name": "Dinesh",
-        "gender": "Male",
+        "gender": "male",
         "age": 13,
         "email": "dinesh16@student.com",
         "marks": {
@@ -295,7 +295,7 @@
       "info": {
         "class": "7",
         "name": "Vani",
-        "gender": "Female",
+        "gender": "female",
         "age": 15,
         "email": "vani17@student.com",
         "marks": {
@@ -313,7 +313,7 @@
       "info": {
         "class": "6",
         "name": "Ajay",
-        "gender": "Male",
+        "gender": "male",
         "age": 14,
         "email": "ajay18@student.com",
         "marks": {
@@ -331,7 +331,7 @@
       "info": {
         "class": "5",
         "name": "Neha",
-        "gender": "Female",
+        "gender": "female",
         "age": 14,
         "email": "neha19@student.com",
         "marks": {
@@ -349,103 +349,13 @@
       "info": {
         "class": "8",
         "name": "Bala",
-        "gender": "Male",
+        "gender": "male",
         "age": 16,
         "email": "bala20@student.com",
         "marks": {
           "physics": 80,
           "maths": 75,
           "english": 72
-        },
-        "result": "pass"
-      }
-    },
-    {
-      "id": "21",
-      "username": "keerthi21@student.com",
-      "password": "pass21",
-      "info": {
-        "class": "7",
-        "name": "Keerthi",
-        "gender": "Female",
-        "age": 15,
-        "email": "keerthi21@student.com",
-        "marks": {
-          "physics": 91,
-          "maths": 89,
-          "english": 94
-        },
-        "result": "pass"
-      }
-    },
-    {
-      "id": "22",
-      "username": "vicky22@student.com",
-      "password": "pass22",
-      "info": {
-        "class": "6",
-        "name": "Vicky",
-        "gender": "Male",
-        "age": 14,
-        "email": "vicky22@student.com",
-        "marks": {
-          "physics": 84,
-          "maths": 77,
-          "english": 85
-        },
-        "result": "pass"
-      }
-    },
-    {
-      "id": "23",
-      "username": "sneha23@student.com",
-      "password": "pass23",
-      "info": {
-        "class": "8",
-        "name": "Sneha",
-        "gender": "Female",
-        "age": 16,
-        "email": "sneha23@student.com",
-        "marks": {
-          "physics": 72,
-          "maths": 65,
-          "english": 78
-        },
-        "result": "pass"
-      }
-    },
-    {
-      "id": "24",
-      "username": "hari24@student.com",
-      "password": "pass24",
-      "info": {
-        "class": "5",
-        "name": "Hari",
-        "gender": "Male",
-        "age": 12,
-        "email": "hari24@student.com",
-        "marks": {
-          "physics": 78,
-          "maths": 82,
-          "english": 80
-        },
-        "result": "pass"
-      }
-    },
-    {
-      "id": "25",
-      "username": "ravi25@student.com",
-      "password": "pass25",
-      "info": {
-        "class": "6",
-        "name": "Ravi",
-        "gender": "Male",
-        "age": 15,
-        "email": "ravi25@student.com",
-        "marks": {
-          "physics": 92,
-          "maths": 88,
-          "english": 76
         },
         "result": "pass"
       }

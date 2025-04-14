@@ -19,4 +19,10 @@ export class StudentDataService {
   getStudentById(id: string): Observable<IStudent> {
     return this.http.get<IStudent>(this.base_Url + id);
   }
+  updateStudent(data: IStudent) {
+    return this.http.put(this.base_Url + data.id, data);
+  }
+  deleteStudent(id: string) {
+    return this.http.delete(this.base_Url + id);
+  }
 }

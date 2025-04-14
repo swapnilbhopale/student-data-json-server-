@@ -2,150 +2,168 @@
   <div class="container-fluid">
     <div class="card">
       <div class="card-header bg-secondary bg-gradient">Student Form</div>
-      <div class="card-body">
-        <div class="row">
-          <div class="col-6">
-            <label for="">ID</label>
-            <input
-              type="text"
-              class="form-control"
-              name="id"
-              formControlName="id"
-            />
-          </div>
-        </div>
-        <div formGroupName="info">
+      <div class="form-wrapper">
+        <div class="card-body">
           <div class="row">
-            <div class="col-3">
-              <label for="">Student Name</label>
+            <div class="col">
+              <label for="">ID</label>
               <input
                 type="text"
                 class="form-control"
-                name="name"
-                formControlName="name"
-              />
-            </div>
-            <div class="col-3">
-              <label for="">Email</label>
-              <input
-                type="email"
-                class="form-control"
-                name="email"
-                formControlName="email"
+                name="id"
+                formControlName="id"
               />
             </div>
           </div>
-
-          <div class="row">
-            <div class="col-3">
-              <label for="">Class</label>
-              <input
-                type="text"
-                class="form-control"
-                name="class"
-                formControlName="class"
-              />
-            </div>
-          </div>
-          <div formGroupName="marks">
+          <div formGroupName="info">
             <div class="row">
-              <div class="col-2">
-                <label for="">Maths Marks</label>
+              <div class="col-6">
+                <label for="">Student Name</label>
                 <input
-                  type="number"
+                  type="text"
                   class="form-control"
-                  name="maths"
-                  formControlName="maths"
+                  name="name"
+                  formControlName="name"
                 />
               </div>
-              <div class="col-2">
-                <label for="">Physics Marks</label>
+              <div class="col-6">
+                <label for="">Email</label>
                 <input
-                  type="number"
+                  type="email"
                   class="form-control"
-                  name="physics"
-                  formControlName="physics"
+                  name="email"
+                  formControlName="email"
                 />
               </div>
-              <div class="col-2">
-                <label for="">English Marks</label>
+            </div>
+
+            <div class="row">
+              <div class="col-3">
+                <label for="">Class</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="class"
+                  formControlName="class"
+                />
+              </div>
+            </div>
+            <div formGroupName="marks">
+              <div class="row">
+                <div class="col-4">
+                  <label for="">Maths Marks</label>
+                  <input
+                    type="number"
+                    class="form-control"
+                    name="maths"
+                    formControlName="maths"
+                  />
+                </div>
+                <div class="col-4">
+                  <label for="">Physics Marks</label>
+                  <input
+                    type="number"
+                    class="form-control"
+                    name="physics"
+                    formControlName="physics"
+                  />
+                </div>
+                <div class="col-4">
+                  <label for="">English Marks</label>
+                  <input
+                    type="number"
+                    class="form-control"
+                    name="english"
+                    formControlName="english"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-4">
+                <label for="">Result</label>
+                <select
+                  type="text"
+                  class="form-select"
+                  name="result"
+                  formControlName="result"
+                >
+                  <option>-----Select-------</option>
+                  <option value="pass">PASS</option>
+                  <option value="fail">FAIL</option>
+                </select>
+              </div>
+              <div class="col-4">
+                <label for="">Gender</label>
+                <select
+                  type="text"
+                  class="form-select"
+                  name="gender"
+                  formControlName="gender"
+                >
+                  <option>-----Select-------</option>
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                </select>
+              </div>
+              <div class="col-4">
+                <label for="">Age</label>
                 <input
                   type="number"
                   class="form-control"
-                  name="english"
-                  formControlName="english"
+                  name="age"
+                  formControlName="age"
                 />
               </div>
             </div>
           </div>
           <div class="row">
-            <div class="col-2">
-              <label for="">Result</label>
+            <div class="col-6">
+              <label for="">User Name</label>
               <input
                 type="text"
                 class="form-control"
-                name="result"
-                formControlName="result"
+                name="userName"
+                formControlName="userName"
               />
             </div>
-            <div class="col-2">
-              <label for="">Gender</label>
-              <select
+            <div class="col-6">
+              <label for="">Password</label>
+              <input
                 type="text"
-                class="form-select"
-                name="gender"
-                formControlName="gender"
+                class="form-control"
+                name="password"
+                formControlName="password"
+              />
+            </div>
+          </div>
+          <div class="row text-center">
+            <div class="col-6">
+              <button class="btn btn-success" (click)="resetForm()">
+                Reset
+              </button>
+            </div>
+
+            <div class="col-6" *ngIf="!isEdit; else edit">
+              <button
+                class="btn btn-info"
+                [disabled]="studentForm.invalid"
+                (click)="submitData()"
               >
-                <option>-----Select-------</option>
-                <option value="Male">Male</option>
-                <option value="Female">Female</option>
-              </select>
+                Submit
+              </button>
             </div>
-            <div class="col-2">
-              <label for="">Age</label>
-              <input
-                type="number"
-                class="form-control"
-                name="age"
-                formControlName="age"
-              />
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-3">
-            <label for="">User Name</label>
-            <input
-              type="text"
-              class="form-control"
-              name="userName"
-              formControlName="userName"
-            />
-          </div>
-          <div class="col-3">
-            <label for="">Password</label>
-            <input
-              type="text"
-              class="form-control"
-              name="password"
-              formControlName="password"
-            />
-          </div>
-        </div>
-        <div class="row text-center">
-          <div class="col-3">
-            <button class="btn btn-success" (click)="resertForm()">
-              Reset
-            </button>
-          </div>
-          <div class="col-3">
-            <button
-              class="btn btn-info"
-              [disabled]="studentForm.invalid"
-              (click)="submitData()"
-            >
-              Submit
-            </button>
+            <ng-template #edit>
+              <div class="col-6">
+                <button
+                  class="btn btn-info"
+                  [disabled]="studentForm.invalid"
+                  (click)="updateData()"
+                >
+                  Update
+                </button>
+              </div>
+            </ng-template>
           </div>
         </div>
       </div>
