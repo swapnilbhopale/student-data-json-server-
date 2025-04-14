@@ -7,7 +7,7 @@ import { IStudent } from "../Modal/students-data";
   providedIn: "root",
 })
 export class StudentDataService {
-  private base_Url = "http://localhost:3000/data";
+  private base_Url = "http://localhost:3000/data/";
   constructor(private http: HttpClient) {}
 
   getStudentData(): Observable<IStudent[]> {
@@ -15,5 +15,8 @@ export class StudentDataService {
   }
   createStudent(data: IStudent) {
     return this.http.post(this.base_Url, data);
+  }
+  getStudentById(id: string): Observable<IStudent> {
+    return this.http.get<IStudent>(this.base_Url + id);
   }
 }

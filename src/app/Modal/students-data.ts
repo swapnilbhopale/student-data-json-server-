@@ -5,10 +5,10 @@ export interface IMarks {
 }
 
 export interface IStudent {
+  id: string;
   username: string;
   password: string;
   info: {
-    id: number;
     class: string;
     name: string;
     gender: string;
