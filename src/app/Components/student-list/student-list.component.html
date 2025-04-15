@@ -1,4 +1,4 @@
-<div class="container-fluid">
+<div class="container-fluid" [class.blurred]="showOverlay">
   <div class="row text-center">
     <div class="col">
       <div class="card">
@@ -37,7 +37,7 @@
                 <td>{{ item.info.marks.physics }}</td>
                 <td>{{ item.info.marks.maths }}</td>
                 <td>{{ item.info.marks.english }}</td>
-                <td>{{ item.info.result }}</td>
+                <td>{{ item.info.result | uppercase }}</td>
                 <td>{{ item.password }}</td>
                 <td>
                   <div>
@@ -56,7 +56,12 @@
                       </button>
                     </span>
                     <span>
-                      <button class="btn btn-secondary">View</button>
+                      <button
+                        class="btn btn-secondary"
+                        (click)="openDialog(item)"
+                      >
+                        View
+                      </button>
                     </span>
                   </div>
                 </td>
@@ -68,3 +73,4 @@
     </div>
   </div>
 </div>
+<ng-container #dialogContainer></ng-container>

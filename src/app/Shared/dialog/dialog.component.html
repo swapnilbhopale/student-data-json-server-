@@ -1,0 +1,45 @@
+<div class="dialog-overlay">
+  <div class="dialog">
+    <div class="row">
+      <div class="col-8 text-end">
+        <h2>Student Details</h2>
+      </div>
+      <div class="col-4 text-end">
+        <button class="colse-btn" (click)="closeDialog()">X</button>
+      </div>
+    </div>
+    <div class="main-content">
+      <table
+        class="table table-striped table-hover table-bordered border-secondary"
+      >
+        <tbody>
+          <tr>
+            <td><strong>Student ID:</strong> {{ id }}</td>
+
+            <td colspan="2"><strong> Name:</strong> {{ name }}</td>
+          </tr>
+          <tr>
+            <td><strong>CLASS:</strong> {{ class }}</td>
+            <td colspan="2">
+              <strong>Result:</strong> {{ result | uppercase }}
+            </td>
+          </tr>
+          <tr>
+            <td><strong>Gender:</strong> {{ gender }}</td>
+            <td colspan="2"><strong>Age:</strong> {{ age }}</td>
+          </tr>
+          <tr>
+            <!-- <td><strong>Result:</strong> {{ result }}</td> -->
+            <td><strong>Maths:</strong> {{ maths }}</td>
+            <td><strong>Physics:</strong> {{ physics }}</td>
+            <td><strong>Englisg:</strong> {{ english }}</td>
+          </tr>
+          <tr>
+            <td><strong>Email:</strong> {{ email }}</td>
+            <td colspan="2"><strong>Password:</strong> {{ password }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

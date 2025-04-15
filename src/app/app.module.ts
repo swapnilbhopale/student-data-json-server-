@@ -13,9 +13,10 @@ import { MatExpansionModule } from "@angular/material/expansion";
 import { StudentListComponent } from './Components/student-list/student-list.component';
 import { StudentFormComponent } from './Components/student-form/student-form.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { DialogComponent } from './Shared/dialog/dialog.component';
 
 @NgModule({
-  declarations: [AppComponent, StudentListComponent, StudentFormComponent, NavbarComponent],
+  declarations: [AppComponent, StudentListComponent, StudentFormComponent, NavbarComponent, DialogComponent],
   imports: [
     CommonModule,
     BrowserModule,
