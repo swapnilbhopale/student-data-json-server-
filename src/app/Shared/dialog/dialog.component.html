@@ -5,7 +5,7 @@
         <h2>Student Details</h2>
       </div>
       <div class="col-4 text-end">
-        <button class="colse-btn" (click)="closeDialog()">X</button>
+        <button class="colse-btn" (click)="closeDialog()">&#x2715;</button>
       </div>
     </div>
     <div class="main-content">
@@ -14,29 +14,40 @@
       >
         <tbody>
           <tr>
-            <td><strong>Student ID:</strong> {{ id }}</td>
+            <td><strong>Student ID:</strong> {{ studentData.id }}</td>
 
-            <td colspan="2"><strong> Name:</strong> {{ name }}</td>
-          </tr>
-          <tr>
-            <td><strong>CLASS:</strong> {{ class }}</td>
             <td colspan="2">
-              <strong>Result:</strong> {{ result | uppercase }}
+              <strong> Name:</strong> {{ studentData.info.name }}
             </td>
           </tr>
           <tr>
-            <td><strong>Gender:</strong> {{ gender | titlecase }}</td>
-            <td colspan="2"><strong>Age:</strong> {{ age }}</td>
+            <td><strong>CLASS:</strong> {{ studentData.info.class }}</td>
+            <td colspan="2">
+              <strong>Result:</strong> {{ studentData.info.result | uppercase }}
+            </td>
           </tr>
           <tr>
-            <!-- <td><strong>Result:</strong> {{ result }}</td> -->
-            <td><strong>Maths:</strong> {{ maths }}</td>
-            <td><strong>Physics:</strong> {{ physics }}</td>
-            <td><strong>Englisg:</strong> {{ english }}</td>
+            <td>
+              <strong>Gender:</strong> {{ studentData.info.gender | titlecase }}
+            </td>
+            <td colspan="2">
+              <strong>Age:</strong> {{ studentData.info.age }}
+            </td>
           </tr>
           <tr>
-            <td><strong>Email:</strong> {{ email }}</td>
-            <td colspan="2"><strong>Password:</strong> {{ password }}</td>
+            <td><strong>Maths:</strong> {{ studentData.info.marks.maths }}</td>
+            <td>
+              <strong>Physics:</strong> {{ studentData.info.marks.physics }}
+            </td>
+            <td>
+              <strong>Englisg:</strong> {{ studentData.info.marks.english }}
+            </td>
+          </tr>
+          <tr>
+            <td><strong>Email:</strong> {{ studentData.info.email }}</td>
+            <td colspan="2">
+              <strong>Password:</strong> {{ studentData.password }}
+            </td>
           </tr>
         </tbody>
       </table>
